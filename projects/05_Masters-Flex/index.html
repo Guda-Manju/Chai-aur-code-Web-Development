@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masters in Flex</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 10px;
+        background-color: #e0adad;
+      }
+      .container1 {
+        border: 2px solid black;
+        width: 30vw;
+        background-color: #f1e8e8;
+        height: 300px;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      .content1 h3 {
+        padding-left: 10px;
+      }
+      .circle {
+        display: flex;
+        padding: 5px;
+      }
+      .circle .item {
+        width: 40px;
+        height: 40px;
+        background-color: #9c52cd;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        margin: 5px;
+      }
+      .circle .item2 {
+        background-color: #444dcf;
+      }
+      .circle .item3 {
+        background-color: #78e163;
+      }
+      .circle .item4 {
+        background-color: #c26d46;
+      }
+      .circle .item5 {
+        background-color: #d8da60;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Flexbox Masters Demo</h2>
+    <div class="container1">
+      <div class="content1">
+        <h3>1.Default Flex(row)</h3>
+        <div class="circle">
+          <div class="item item1">1</div>
+          <div class="item item2">2</div>
+          <div class="item item3">3</div>
+          <div class="item item4">4</div>
+          <div class="item item5">5</div>
+        </div>
+      </div>
+    </div>
+    <div class="container1">
+      <div class="content1">
+        <h3>2.Flex Direction:Column</h3>
+        <div class="circle" style="flex-direction: column">
+          <div class="item item1">1</div>
+          <div class="item item2">2</div>
+          <div class="item item3">3</div>
+          <div class="item item4">4</div>
+          <div class="item item5">5</div>
+        </div>
+      </div>
+    </div>
+    <div class="container1">
+      <div class="content1">
+        <h3>3.justify-content:Space-Between</h3>
+        <div class="circle" style="justify-content: space-between">
+          <div class="item item1">1</div>
+          <div class="item item2">2</div>
+          <div class="item item3">3</div>
+          <div class="item item4">4</div>
+          <div class="item item5">5</div>
+        </div>
+      </div>
+    </div>
+    <div class="container1">
+      <div class="content1">
+        <h3>4.Align-items:Center</h3>
+        <div class="circle" style="align-items: end">
+          <div class="item item1">1</div>
+          <div class="item item2">2</div>
+          <div class="item item3" style="align-items: end">3</div>
+          <div class="item item4">4</div>
+          <div class="item item5">5</div>
+        </div>
+      </div>
+    </div>
+    <div class="container1">
+      <div class="content1">
+        <h3>5.Flex-wrap:Wrap</h3>
+        <div class="circle" style="flex-wrap: wrap">
+          <div class="item item1">1</div>
+          <div class="item item2">2</div>
+          <div class="item item3">3</div>
+          <div class="item item4">4</div>
+          <div class="item item5">5</div>
+          <div class="item item5">6</div>
+          <div class="item item5">7</div>
+          <div class="item item5">8</div>
+          <div class="item item5">9</div>
+          <div class="item item5">10</div>
+        </div>
+      </div>
+    </div>
+    <div class="container1">
+      <div class="content1">
+        <h3>6.Align-Content:Space-Around(with Wrap)</h3>
+        <div
+          class="circle"
+          style="flex-wrap: wrap; align-content: space-between"
+        >
+          <div class="item item1">1</div>
+          <div class="item item2">2</div>
+          <div class="item item3">3</div>
+          <div class="item item4">4</div>
+          <div class="item item5">5</div>
+          <div class="item item5">6</div>
+          <div class="item item5">7</div>
+          <div class="item item5">8</div>
+          <div class="item item5">9</div>
+          <div class="item item5">10</div>
+        </div>
+      </div>
+    </div>
+    <div class="container1">
+      <div class="content1">
+        <h3>7.Order Property</h3>
+        <div class="circle">
+          <div class="item item1" style="order: 5">1</div>
+          <div class="item item2">2</div>
+          <div class="item item3">3</div>
+          <div class="item item4">4</div>
+          <div class="item item5">5</div>
+        </div>
+      </div>
+    </div>
+    <div class="container1">
+      <div class="content1">
+        <h3>8.Flex Grow</h3>
+        <div class="circle">
+          <div class="item item1">1</div>
+          <div class="item item2" style="flex-grow: 3">2</div>
+          <div class="item item3">3</div>
+          <div class="item item4">4</div>
+          <div class="item item5">5</div>
+        </div>
+      </div>
+    </div>
+    <div class="container1">
+      <div class="content1">
+        <h3>9.Align Self</h3>
+        <div class="circle">
+          <div class="item item1">1</div>
+          <div class="item item2">2</div>
+          <div class="item item3" style="align-self: center">3</div>
+          <div class="item item4">4</div>
+          <div class="item item5">5</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
